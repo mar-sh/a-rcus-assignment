@@ -94,7 +94,6 @@ const Home: React.FC<React.PropsWithChildren> = () => {
             <UserBanner />
           </UserBannerWrapper>
         )}
-        <MultipleBanner />
         <Hero />
       </StyledHeroSection>
     </>
