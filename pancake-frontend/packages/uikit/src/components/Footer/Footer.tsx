@@ -36,41 +36,7 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
         <StyledIconMobileContainer display={["block", null, "none"]}>
           <LogoWithTextIcon isDark width="130px" />
         </StyledIconMobileContainer>
-        <Flex
-          order={[2, null, 1]}
-          flexDirection={["column", null, "row"]}
-          justifyContent="space-between"
-          alignItems="flex-start"
-          mb={["42px", null, "36px"]}
-        >
-          {items?.map((item) => (
-            <StyledList key={item.label}>
-              <StyledListItem>{item.label}</StyledListItem>
-              {item.items?.map(({ label, href, isHighlighted = false }) => (
-                <StyledListItem key={label}>
-                  {href ? (
-                    <Link
-                      data-theme="dark"
-                      href={href}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      color={isHighlighted ? vars.colors.warning : "text"}
-                      bold={false}
-                    >
-                      {label}
-                    </Link>
-                  ) : (
-                    <StyledText>{label}</StyledText>
-                  )}
-                </StyledListItem>
-              ))}
-            </StyledList>
-          ))}
-          <Box display={["none", null, "block"]}>
-            <LogoWithTextIcon isDark width="160px" />
-          </Box>
-        </Flex>
-        <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} />
+
         <StyledToolsContainer
           data-theme="dark"
           order={[1, null, 3]}
