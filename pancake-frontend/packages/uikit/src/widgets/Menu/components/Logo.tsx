@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Heading } from "@pancakeswap/uikit";
 import styled, { keyframes } from "styled-components";
 import Flex from "../../../components/Box/Flex";
 import { LogoIcon, LogoWithTextIcon } from "../../../components/Svg";
@@ -49,7 +50,9 @@ const Logo: React.FC<React.PropsWithChildren<Props>> = ({ isDark, href }) => {
   const innerLogo = (
     <>
       <LogoIcon className="mobile-icon" />
-      <LogoWithTextIcon className="desktop-icon" isDark={isDark} />
+      <Heading scale="md" className="desktop-icon">
+        MooncakeSwap
+      </Heading>
     </>
   );
 
