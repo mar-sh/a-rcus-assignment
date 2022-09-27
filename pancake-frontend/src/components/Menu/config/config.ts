@@ -54,20 +54,9 @@ const config: (
           label: t('Swap'),
           href: '/swap',
         },
-      ].map((item) => addMenuItemSupported(item, chainId)),
-    },
-    {
-      label: t('Earn'),
-      href: '/farms',
-      icon: EarnIcon,
-      fillIcon: EarnFillIcon,
-      image: '/images/decorations/pe2.png',
-      supportChainIds: SUPPORT_ONLY_BSC,
-      items: [
         {
-          label: t('Pools'),
-          href: '/pools',
-          supportChainIds: SUPPORT_ONLY_BSC,
+          label: t('Liquidity'),
+          href: '/liquidity',
         },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
