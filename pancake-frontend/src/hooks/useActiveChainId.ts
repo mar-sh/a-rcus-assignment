@@ -32,7 +32,7 @@ export function useLocalNetworkChain() {
     return chainId
   }
 
-  return 97
+  return 4
 }
 
 export const useActiveChainId = () => {

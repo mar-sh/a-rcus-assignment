@@ -217,6 +217,14 @@
       "chainId": 97,
       "decimals": 18,
       "logoURI": "https://pancakeswap.finance/images/tokens/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c.png"
+    },
+    {
+      "name": "Mooncake",
+      "symbol": "MCAKE",
+      "address": "0xf39482e812A31dD13C210F4B2FcB662B7782e626",
+      "chainId": 4,
+      "decimals": 18,
+      "logoURI": ""
     }
   ]
 }
