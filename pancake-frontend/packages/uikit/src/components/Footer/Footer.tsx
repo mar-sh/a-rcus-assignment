@@ -50,12 +50,12 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
             <Button
               data-theme="light"
               as="a"
-              href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
+              href="/swap?outputCurrency=0xf39482e812A31dD13C210F4B2FcB662B7782e626&chainId=4"
               target="_blank"
               scale="sm"
               endIcon={<ArrowForwardIcon color="backgroundAlt" />}
             >
-              {buyCakeLabel}
+              Buy MCAKE
             </Button>
           </Flex>
         </StyledToolsContainer>
