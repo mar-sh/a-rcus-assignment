@@ -29,6 +29,7 @@ const sentryWebpackPluginOptions =
 
 /** @type {import('next').NextConfig} */
 const config = {
+  staticPageGenerationTimeout: 1000,
   compiler: {
     styledComponents: true,
   },

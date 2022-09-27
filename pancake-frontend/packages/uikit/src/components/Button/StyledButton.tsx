@@ -58,8 +58,11 @@ const StyledButton = styled.button<BaseButtonProps>`
   letter-spacing: 0.03em;
   line-height: 1;
   opacity: ${getOpacity};
-  outline: 0;
   transition: background-color 0.2s, opacity 0.2s;
+
+  &.hero-cta-button {
+    outline: 1px solid #eede8c;
+  }
 
   &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
     opacity: 0.65;

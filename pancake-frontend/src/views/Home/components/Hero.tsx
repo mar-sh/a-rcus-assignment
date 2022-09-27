@@ -41,6 +41,7 @@ const BgWrapper = styled.div`
   height: 100%;
   bottom: 0px;
   left: 0px;
+  background: #b71e08;
 `
 
 const InnerWrapper = styled.div`
@@ -132,9 +133,11 @@ const Hero = () => {
             {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
           </Heading>
           <Flex>
-            {!account && <ConnectWalletButton mr="8px" />}
+            {!account && <ConnectWalletButton mr="8px" className="hero-cta-button" />}
             <NextLinkFromReactRouter to="/swap">
-              <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
+              <Button variant="primary" className="hero-cta-button">
+                {t('Trade Now')}
+              </Button>
             </NextLinkFromReactRouter>
           </Flex>
         </Flex>
